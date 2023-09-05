@@ -168,7 +168,7 @@ Try {
         }
 
         ## <Perform Installation tasks here>
-        $exitCode = Execute-Process -Path "$dirFiles/EulerSetup-64_2023-03-27.exe" -Parameters "/VERYSILENT" -PassThru
+        $exitCode = Execute-Process -Path "$dirFiles\EulerSetup-64_2023-03-27.exe" -Parameters "/VERYSILENT" -PassThru
         If (($exitCode.ExitCode -ne "0") -and ($mainExitCode -ne "3010")) { $mainExitCode = $exitCode.ExitCode }
         ##*===============================================
         ##* POST-INSTALLATION
